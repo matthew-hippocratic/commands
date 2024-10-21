@@ -34,4 +34,6 @@ function tmux.k {
 }
 
 # list
-alias tmux.l="tmux ls"
+function tmux.l {
+    tmux list-sessions
+}
