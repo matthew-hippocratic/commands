@@ -32,3 +32,6 @@ function tmux.k {
 
     tmux kill-session -t "$session_name"
 }
+
+# list
+alias tmux.l="tmux ls"
