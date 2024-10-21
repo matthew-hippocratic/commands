@@ -1,0 +1,2 @@
+
+alias testcmd="echo 'testcmd'"
