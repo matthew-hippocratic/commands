@@ -3,5 +3,32 @@
 PROMPT="%F{green}%n@%F{blue}%m %F{red}%~ %F{reset}%# "
 
 
-# Aliases
-alias testcmd="echo 'testcmd'"
+### Aliases
+
+## tmux aliases
+# attach
+function tmux.a {
+    local session_name="$1"
+
+    if [ -z "$session_name" ]; then
+        echo "Usage: tmux.a <session_name>"
+        echo "Creates a tmux session with <session_name> if it doesn't exist"
+        echo "Then attaches to the tmux session"
+        return 1
+    fi
+
+    tmux attach-session -t "$session_name" || tmux new-session -s "$session_name"
+}
+
+# kill
+function tmux.k {
+    local session_name="$1"
+
+    if [ -z "$session_name" ]; then
+        echo "Usage: tmux.k <session_name>"
+        echo "Kills the tmux session with <session_name>"
+        return 1
+    fi
+
+    tmux kill-session -t "$session_name"
+}
