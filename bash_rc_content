@@ -1,0 +1,7 @@
+
+# Prompt coloring
+PROMPT="%F{green}%n@%F{blue}%m %F{red}%~ %F{reset}%# "
+
+
+# Aliases
+alias testcmd="echo 'testcmd'"

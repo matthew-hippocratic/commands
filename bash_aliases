@@ -1,2 +1,0 @@
-
-alias testcmd="echo 'testcmd'"
