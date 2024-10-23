@@ -7,7 +7,7 @@ PROMPT="%F{green}%n@%F{blue}%m %F{red}%~ %F{reset}%# "
 
 ## tmux aliases
 # attach
-function tmux.a {
+function tmuxa {
     local session_name="$1"
 
     if [ -z "$session_name" ]; then
@@ -21,7 +21,7 @@ function tmux.a {
 }
 
 # kill
-function tmux.k {
+function tmuxk {
     local session_name="$1"
 
     if [ -z "$session_name" ]; then
@@ -34,6 +34,6 @@ function tmux.k {
 }
 
 # list
-function tmux.l {
+function tmuxl {
     tmux list-sessions
 }
