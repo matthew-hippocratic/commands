@@ -23,6 +23,8 @@ alias gd="git diff"
 alias gco="git checkout"
 alias gb="git branch"
 alias gbd="git branch -D $@"
+alias gl="git log"
+alias gr="git rebase $@"
 
 ## tmux aliases
 # attach
