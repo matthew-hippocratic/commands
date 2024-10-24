@@ -9,6 +9,9 @@ PROMPT="%F{green}%n@%F{blue}%m %F{red}%~ %F{reset}%# "
 alias sv="source ~/venv/bin/activate"
 alias dv="deactivate"
 
+# psudo alias (use regular path but with sudo privileges)
+psudo() { sudo env PATH="$PATH" "$@"; }
+
 
 ## tmux aliases
 # attach
