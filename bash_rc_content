@@ -7,6 +7,7 @@ PROMPT="%F{green}%n@%F{blue}%m %F{red}%~ %F{reset}%# "
 
 # venv alias
 alias sv="source ~/venv/bin/activate"
+alias dv="deactivate"
 
 
 ## tmux aliases
