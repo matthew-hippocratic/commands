@@ -5,6 +5,10 @@ PROMPT="%F{green}%n@%F{blue}%m %F{red}%~ %F{reset}%# "
 
 ### Aliases
 
+# venv alias
+alias sv="source ~/venv/bin/activate"
+
+
 ## tmux aliases
 # attach
 function tmuxa {
